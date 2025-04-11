@@ -1,8 +1,9 @@
 import express from "express";
 import { PORT } from "./config/env.js";
-import packagesRouter from "./routes/packages.routes.js";
 import connectDb from "./db/connect.js";
+import packagesRouter from "./routes/packages.routes.js";
 import hotelsRouter from "./routes/hotels.routes.js";
+import indexRouter from "./routes/index.routes.js";
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.set('public', 'public');
 app.use(express.json());
 
 // routers
+app.use('/', indexRouter);
 app.use('/api/v1/packages', packagesRouter);
 app.use('/api/v1/hotels', hotelsRouter);
 
