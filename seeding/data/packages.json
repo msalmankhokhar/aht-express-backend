@@ -1,0 +1,132 @@
+{
+    "packages": [
+        {
+            "title": "07 Nights 3 Star Umrah Package",
+            "makkahHotel": {"name": "Emaar Al Khalil"},
+            "madinahHotel": {"name": "Emaar Taibah"},
+            "makkahNights": 4,
+            "madinahNights": 3,
+            "price": 755
+        },
+        {
+            "title": "10 Nights 3 Star Umrah Package",
+            "makkahHotel": {"name": "Nawazi Ajyad"},
+            "madinahHotel": {"name": "Grand Plaza Al Madinah"},
+            "makkahNights": 5,
+            "madinahNights": 5,
+            "price": 795
+        },
+        {
+            "title": "12 Nights 3 Star Umrah Package",
+            "makkahHotel": {"name": "Anwar Al Deafah"},
+            "madinahHotel": {"name": "Odst Al Madinah"},
+            "makkahNights": 6,
+            "madinahNights": 6,
+            "price": 825
+        },
+        {
+            "title": "14 Nights 3 Star Umrah Package",
+            "makkahHotel": {"name": "Al Massa Bader"},
+            "madinahHotel": {"name": "Al Mokhtara Diamond"},
+            "makkahNights": 7,
+            "madinahNights": 7,
+            "price": 855
+        },
+        {
+            "title": "07 Nights 4 Star Umrah Package",
+            "makkahHotel": {"name": "Al Ebaa Makkah"},
+            "madinahHotel": {"name": "Saja Al Madinah"},
+            "makkahNights": 4,
+            "madinahNights": 3,
+            "price": 875
+        },
+        {
+            "title": "10 Nights 4 Star Umrah Package",
+            "makkahHotel": {"name": "Emaar Grand Makkah"},
+            "madinahHotel": {"name": "Golden Tulip Al Mektan"},
+            "makkahNights": 5,
+            "madinahNights": 5,
+            "price": 925
+        },
+        {
+            "title": "12 Nights 4 Star Umrah Package",
+            "makkahHotel": {"name": "Almassa Grand"},
+            "madinahHotel": {"name": "Zowar International Madinah"},
+            "makkahNights": 6,
+            "madinahNights": 6,
+            "price": 975
+        },
+        {
+            "title": "14 Nights 4 Star Umrah Package",
+            "makkahHotel": {"name": "Batoul Ajyad Hotel"},
+            "madinahHotel": {"name": "Rua Al Hijrah Hotel"},
+            "makkahNights": 7,
+            "madinahNights": 7,
+            "price": 1035
+        },
+        {
+            "title": "07 Nights 5 Star Umrah Package",
+            "makkahHotel": {"name": "Anjum Makkah"},
+            "madinahHotel": {"name": "Dar Al Eiman Royal"},
+            "makkahNights": 4,
+            "madinahNights": 3,
+            "price": 995
+        },
+        {
+            "title": "10 Nights 5 Star Umrah Package",
+            "makkahHotel": {"name": "Jabal Omar Marriot"},
+            "madinahHotel": {"name": "Anwar Al Madinah Movenpick"},
+            "makkahNights": 5,
+            "madinahNights": 5,
+            "price": 1055
+        },
+        {
+            "title": "12 Nights 5 Star Umrah Package",
+            "makkahHotel": {"name": "Pullman ZamZam"},
+            "madinahHotel": {"name": "New Madinah Hotel"},
+            "makkahNights": 6,
+            "madinahNights": 6,
+            "price": 1135
+        },
+        {
+            "title": "14 Nights 5 Star Umrah Package",
+            "makkahHotel": {"name": "Swissotel Makkah"},
+            "madinahHotel": {"name": "Crowne Plaza Madinah"},
+            "makkahNights": 7,
+            "madinahNights": 7,
+            "price": 1225
+        },
+        {
+            "title": "07 Nights Economic Umrah Package",
+            "makkahHotel": {"name": "Al Kiswa Towers"},
+            "madinahHotel": {"name": "Emaar Taibah"},
+            "makkahNights": 4,
+            "madinahNights": 3,
+            "price": 639
+        },
+        {
+            "title": "10 Nights Economic Umrah Package",
+            "makkahHotel": {"name": "Voco Makkah"},
+            "madinahHotel": {"name": "Grand Zowar Madinah"},
+            "makkahNights": 5,
+            "madinahNights": 5,
+            "price": 678
+        },
+        {
+            "title": "12 Nights Economic Umrah Package",
+            "makkahHotel": {"name": "Emaar Elite Makkah"},
+            "madinahHotel": {"name": "Zaha Al Madinah"},
+            "makkahNights": 6,
+            "madinahNights": 6,
+            "price": 710
+        },
+        {
+            "title": "14 Nights Economic Umrah Package",
+            "makkahHotel": {"name": "M Makkah by Millennium"},
+            "madinahHotel": {"name": "Odst Al Madinah"},
+            "makkahNights": 7,
+            "madinahNights": 7,
+            "price": 745
+        }
+    ]
+}

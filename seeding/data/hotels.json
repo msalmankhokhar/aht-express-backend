@@ -1,0 +1,96 @@
+{
+    "hotels": [
+        {
+            "name": "Emaar Al Khalil",
+            "city": "Makkah"
+        },
+        {
+            "name": "Emaar Taibah",
+            "city": "Madinah"
+        },
+        {
+            "name": "Al Ebaa Makkah",
+            "city": "Makkah"
+        },
+        {
+            "name": "Saja Al Madinah",
+            "city": "Madinah"
+        },
+        {
+            "name": "Anjum Makkah",
+            "city": "Makkah"
+        },
+        {
+            "name": "Dar Al Eiman Royal",
+            "city": "Madinah"
+        },
+        {
+            "name": "Al Kiswa Towers",
+            "city": "Makkah"
+        },
+        {
+            "name": "Nawazi Ajyad",
+            "city": "Makkah"
+        },
+        {
+            "name": "Grand Plaza Al Madinah",
+            "city": "Madinah"
+        },
+        {
+            "name": "Emaar Grand Makkah",
+            "city": "Makkah"
+        },
+        {
+            "name": "Golden Tulip Al Mektan",
+            "city": "Madinah"
+        },
+        {
+            "name": "Jabal Omar Marriot",
+            "city": "Makkah"
+        },
+        {
+            "name": "Anwar Al Madinah Movenpick",
+            "city": "Madinah"
+        },
+        {
+            "name": "Voco Makkah",
+            "city": "Makkah"
+        },
+        {
+            "name": "Grand Zowar Madinah",
+            "city": "Madinah"
+        },
+        {
+            "name": "Anwar Al Deafah",
+            "city": "Makkah"
+        },
+        {
+            "name": "Odst Al Madinah",
+            "city": "Madinah"
+        },
+        {
+            "name": "Almassa Grand ",
+            "city": "Makkah"
+        },
+        {
+            "name": "Zowar International Madinah",
+            "city": "Madinah"
+        },
+        {
+            "name": "Pullman ZamZam",
+            "city": "Makkah"
+        },
+        {
+            "name": "New Madinah Hotel",
+            "city": "Madinah"
+        },
+        {
+            "name": "Emaar Elite Makkah",
+            "city": "Makkah"
+        },
+        {
+            "name": "Zaha Al Madinah",
+            "city": "Madinah"
+        }
+    ]
+}
