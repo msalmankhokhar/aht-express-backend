@@ -1,20 +1,44 @@
 import { Router } from "express";
 import { Package, Hotel } from "../models/index.js";
+import { getPackages, updatePackages } from "../controllers/packages.controllers.js";
 
 const packagesRouter = Router();
 
-// route to get all packages
+// fetch all packages
 packagesRouter.get("/", async (req, res) => {
-  const packages = await Package.find({}).lean();
+  const db_query = req.body?.db_query;
+  const limit = req.body?.limit;
+  const packages = await getPackages(db_query, limit);
   res.json({
     packages,
+    total_results: packages.length,
+    message: "Packages retrieved successfully",
+    db_query,
   });
 });
 
-// route to add packages in bulk
-packagesRouter.put("/", async (req, res) => {
+// update packages
+packagesRouter.patch("/", async (req, res) => {
+  const db_query = req.body?.db_query;
+  const update = req.body?.update;
+  try {
+    const updatedPackages = await updatePackages(db_query, update);
+    if (updatedPackages.matchedCount === 0) {
+      return res.status(404).json({ message: "No packages found" });
+    }
+    return res.json({
+      message: `${updatedPackages.modifiedCount} packages updated successfully`,
+      updatedPackages: updatedPackages,
+    });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+});
+
+// add packages in bulk
+packagesRouter.post("/", async (req, res) => {
   // accepts an array of packages
-  const packages = req.body.packages || req.body;
+  const packages = req.body?.packages || req.body;
   // checking that packages is an array
   if (!Array.isArray(packages)) {
     return res.status(400).json({ message: "Request body should be an array of packages" });
