@@ -8,8 +8,8 @@ export const {
     ADMIN_PASSWORD,
     MONGODB_URI,
     SMTP_HOST,
-    SMTP_PASS,
     SMTP_PORT,
     SMTP_USER,
+    SMTP_PASS,
 
 } = process.env;
