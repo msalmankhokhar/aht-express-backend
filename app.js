@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import { PORT } from "./config/env.js";
 import connectDb from "./db/connect.js";
 import packagesRouter from "./routes/packages.routes.js";
@@ -13,6 +14,7 @@ app.set('public', 'public');
 
 // middlewares
 app.use(express.json());
+app.use(cors());
 
 // routers
 app.use('/', indexRouter);
