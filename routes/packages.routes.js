@@ -8,6 +8,7 @@ const packagesRouter = Router();
 packagesRouter.get("/", async (req, res) => {
   const db_query = req.body?.db_query;
   const limit = req.body?.limit;
+  console.log(req.body);
   const packages = await getPackages(db_query, limit);
   res.json({
     packages,

@@ -7,7 +7,7 @@ const PackageSchema = new mongoose.Schema({
     description: { type: String, required: false },
     thumbnail: { type: String, required: false },
     purpose: { type: String, required: false, enum: ['Umrah', 'Hajj', 'Ramadan Umrah'], default: 'Umrah' },
-    category: { type: String, required: false, enum: packageCategories, default: 'Popular' },
+    category: { type: String, required: false, enum: packageCategories, default: 'popular' },
     labels: { type: [String], required: false, enum: ['All-Inclusive'], required: false },
 
     makkahHotel: { type: mongoose.Schema.Types.ObjectId, ref: 'Hotel', required: false },
