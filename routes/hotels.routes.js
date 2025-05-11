@@ -1,15 +1,41 @@
 import { Router } from "express";
 import { Hotel } from '../models/index.js';
+import { getHotels, updateHotels } from "../controllers/hotels.controllers.js";
 
 const hotelsRouter = Router();
 
-// route to get all hotels
+// fetch all hotels
 hotelsRouter.get("/", async (req, res) => {
-    const hotels = await Hotel.find({}).lean();
-    res.json({
-        hotels,
-    });
+  const db_query = req.body?.db_query;
+  const limit = req.body?.limit;
+  console.log(req.body);
+  const hotels = await getHotels(db_query, limit);
+  res.json({
+    hotels,
+    total_results: hotels.length,
+    message: "Hotels retrieved successfully",
+    db_query,
+  });
 });
+
+// update hotels
+hotelsRouter.patch("/", async (req, res) => {
+  const db_query = req.body?.db_query;
+  const update = req.body?.update;
+  try {
+    const updatedHotels = await updateHotels(db_query, update);
+    if (updateHotels.matchedCount === 0) {
+      return res.status(404).json({ message: "No hotels found" });
+    }
+    return res.json({
+      message: `${updateHotels.modifiedCount} hotels updated successfully`,
+      updateHotels: updatedHotels,
+    });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+});
+
 
 // route to add hotels in bulk
 hotelsRouter.put("/", async (req, res) => {

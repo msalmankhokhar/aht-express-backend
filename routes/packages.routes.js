@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { Package, Hotel } from "../models/index.js";
-import { getPackages, updatePackages } from "../controllers/packages.controllers.js";
+import { getPackageById, getPackageBySlug, getPackages, updatePackages } from "../controllers/packages.controllers.js";
 
 const packagesRouter = Router();
 
@@ -15,6 +15,34 @@ packagesRouter.get("/", async (req, res) => {
     total_results: packages.length,
     message: "Packages retrieved successfully",
     db_query,
+  });
+});
+
+// get packagee by ID
+packagesRouter.get("/:packageID", async (req, res) => {
+  const packageID = req.params.packageID;
+  const pkg = await getPackageById(packageID);
+  if (!pkg) {
+    return res.status(404).json({ success: false, message: "Package not found" });
+  }
+  res.json({
+    data: pkg,
+    success: true,
+    message: "Package retrieved successfully",
+  });
+});
+
+// get package by SLUG
+packagesRouter.get("/slug/:slug", async (req, res) => {
+  const slug = req.params.slug;
+  const pkg = await getPackageBySlug(slug);
+  if (!pkg) {
+    return res.status(404).json({ success: false, message: "Package not found" });
+  }
+  res.json({
+    data: pkg,
+    success: true,
+    message: "Package retrieved successfully",
   });
 });
 
