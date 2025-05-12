@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query Confirmation - Al HabibTravel</title>
+  <style>
+    /* General Email Styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-spacing: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    h1, h2 {
+      color: #00454A;
+      color: #D4A10F;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .header {
+      /* background-color: #007bff; */
+      padding: 20px;
+      text-align: center;
+    }
+    .footer {
+      /* background-color: #f1f1f1; */
+      background-color: #01555b;
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content table {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .content td {
+      padding: 5px;
+    }
+    .header img {
+        width: 130px;
+      }
+    @media only screen and (max-width: 600px) {
+      .content {
+        padding: 10px;
+      }
+      .header img {
+        width: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="header">
+        <img src="https://www.alhabibtravel.co.uk/img/logos/logo.png" alt="Al Habib Travel Logo">
+        <h1>Al Habib Travel Ltd</h1>
+        <p>Trusted by Pilgrims, Loved by Families - From Heart to Haram</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <h2>Hello Habibi,</h2>
+        <p>You got a new message from <strong><%= name %></strong> from main website query form.</p>
+        <p>Here are the details</p>
+        <table>
+          <% for (let key in data) { %>
+            <tr>
+              <td><strong><%= key %>:</strong></td>
+              <td><%= data[key] %></td>
+            </tr>
+          <% } %>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="footer">
+        <!-- <p>Thank you for choosing <strong style="color: #D4A10F;">Al Habib Travel</strong></p>
+        <p><a target="_blank" href="https://www.alhabibtravel.co.uk">Visit our website</a> for more information.</p> -->
+        <p>&copy; 2024 Al Habib Travel | All Rights Reserved</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
