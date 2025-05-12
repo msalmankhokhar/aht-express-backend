@@ -20,7 +20,7 @@ mailRouter.post("/query_form", async (req, res) => {
         // sending Email
         await mailer.sendMail({
             from: `"Al Habib Travel" <${SMTP_USER}>`,
-            to: TEST_RECIPIENTS,
+            to: ADMIN_RECIPIENTS,
             subject: 'New lead from main website',
             html: htmlContent
         })
